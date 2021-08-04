@@ -1,0 +1,11 @@
+#if($speedUnit == 'kmh')
+#set($speedValue = $position.speed * 1.852)
+#set($speedString = $numberTool.format("0.0 km/h", $speedValue))
+#elseif($speedUnit == 'mph')
+#set($speedValue = $position.speed * 1.852)
+#set($speedString = $numberTool.format("0.0 km/h", $speedValue))
+#else
+#set($speedValue = $position.speed * 1.852)
+#set($speedString = $numberTool.format("0.0 km/h", $speedValue))
+#end
+*VEICULO EXCEDEU LIMITE DE VELOCIDADE:*\n$device.name - $speedString#{if}($geofence) in $geofence.name#{else}#{end}\n*Data/Hora:* $dateTool.format("dd-MM-YYYY HH:mm:ss", $event.serverTime, $locale, $timezone)\n*Localização (Google Maps):*\nhttps://www.google.com/maps/search/$position.latitude,$position.longitude\n\n*Endereço Aproximado:*\n#{if}($position.address)$position.address#{else}$position.latitude&deg;, $position.longitude&deg;#{end}

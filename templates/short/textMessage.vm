@@ -1,0 +1,1 @@
+Mensagem de texto recebida de:\n\n$device.name at $dateTool.format("YYYY-MM-dd HH:mm:ss", $event.serverTime, $locale, $timezone)

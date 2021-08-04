@@ -1,0 +1,6 @@
+#if($driver)
+#set($driverName = $driver.name)
+#else
+#set($driverName = $event.getString("driverUniqueId"))
+#end
+*TROCA DE MOTORISTA*\n*Motorista*\nDriver $driverName has changed in $device.name\n*Data/Hora:* $dateTool.format("YYYY-MM-dd HH:mm:ss", $event.serverTime, $locale, $timezone)

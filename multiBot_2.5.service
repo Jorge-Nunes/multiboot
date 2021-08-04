@@ -1,0 +1,14 @@
+[Unit]
+Description=MultiBot WhatsApp API Gateway
+
+[Service]
+PIDFile=/tmp/multiBot_2.5-99.pid
+User=root
+Group=root
+Restart=always
+KillSignal=SIGQUIT
+WorkingDirectory=/opt/multiBot_v2.5/
+ExecStart=/usr/bin/node /opt/multiBot_v2.5/src/simple.js
+
+[Install]
+WantedBy=multi-user.target

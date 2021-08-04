@@ -1,0 +1,1 @@
+*RASTREADOR ACORDOU*\n*Veículo:* $device.name online\n\n*Motivo:* Vibração Detectada\n\n*Data/Hora:* $dateTool.format("YYYY-MM-dd HH:mm:ss", $event.serverTime, $locale, $timezone)

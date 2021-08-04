@@ -1,0 +1,1 @@
+*PERTDA DE CONEXÃO*\n$device.name\n\n*STATUS:* Desconhecido\n*Data/Hora:* $dateTool.format("YYYY-MM-dd HH:mm:ss", $event.serverTime, $locale, $timezone)\n\n*Motivo:*\nPossível área de sombreamento de sinal\n\nObs: Caso este alerta continue por mais de 24h, mesmo com o veículo esteja em movimento  favor comunicar o suporte técnico

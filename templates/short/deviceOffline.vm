@@ -1,0 +1,1 @@
+*RASTREADOR ADORMECIDO*\n$device.name\n*Data/Hora:* $dateTool.format("YYYY-MM-dd HH:mm:ss", $event.serverTime, $locale, $timezone)\n\n*Motivo:* Veículo parado sem detecção de anormalidade por mais de 5 min
